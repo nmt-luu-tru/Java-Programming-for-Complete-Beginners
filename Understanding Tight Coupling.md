@@ -1,4 +1,4 @@
-# Tìm Hiểu Về Tight Coupling Và Loose Coupling Trong Java
+# Tìm Hiểu Về Tight Coupling
 
 ## 1. Tight Coupling Là Gì?
 
@@ -53,12 +53,3 @@ Tight coupling gây ra nhiều vấn đề khi phát triển phần mềm:
 - **Khó khăn trong việc mở rộng**: Khi bạn muốn thêm chức năng mới (ví dụ, một trò chơi mới), bạn phải thay đổi mã nguồn trong nhiều nơi.
 - **Khó bảo trì**: Mỗi lần thay đổi một phần của hệ thống, bạn phải kiểm tra lại các phần khác để đảm bảo rằng chúng không bị ảnh hưởng.
 - **Giảm tính linh hoạt**: Bạn không thể dễ dàng thay đổi hoặc thêm các thành phần mà không làm gián đoạn toàn bộ hệ thống.
-
-
-## 3. Kết Luận
-
-- **Tight Coupling**: Là khi các lớp phụ thuộc mạnh vào nhau, gây khó khăn khi thay đổi và mở rộng.
-- **Loose Coupling**: Giúp tăng tính linh hoạt, dễ dàng bảo trì và mở rộng hệ thống bằng cách giảm sự phụ thuộc giữa các thành phần.
-- **Interfaces**: Là công cụ mạnh mẽ trong Java giúp đạt được loose coupling, cho phép các lớp tương tác thông qua giao diện chung thay vì phụ thuộc trực tiếp vào nhau.
-
-Ở bước tiếp theo, chúng ta sẽ tiếp tục khám phá cách Spring Framework hỗ trợ **loose coupling** thông qua các khái niệm như **Dependency Injection**.
