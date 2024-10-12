@@ -1,4 +1,4 @@
-# Tìm Hiểu Về Tight Coupling
+# Tìm Hiểu Về Tight Coupling Và Loose Coupling Trong Java
 
 ## 1. Tight Coupling Là Gì?
 
@@ -53,3 +53,20 @@ Tight coupling gây ra nhiều vấn đề khi phát triển phần mềm:
 - **Khó khăn trong việc mở rộng**: Khi bạn muốn thêm chức năng mới (ví dụ, một trò chơi mới), bạn phải thay đổi mã nguồn trong nhiều nơi.
 - **Khó bảo trì**: Mỗi lần thay đổi một phần của hệ thống, bạn phải kiểm tra lại các phần khác để đảm bảo rằng chúng không bị ảnh hưởng.
 - **Giảm tính linh hoạt**: Bạn không thể dễ dàng thay đổi hoặc thêm các thành phần mà không làm gián đoạn toàn bộ hệ thống.
+
+## 2. Loose Coupling Là Gì?
+
+**Loose coupling** (liên kết lỏng) là khi các lớp hoặc thành phần của hệ thống ít phụ thuộc vào nhau, cho phép chúng hoạt động độc lập hơn. Điều này giúp bạn dễ dàng thay đổi một phần của hệ thống mà không cần thay đổi nhiều phần khác.
+
+### Cách Đưa Loose Coupling Vào GameRunner
+
+Để làm cho **GameRunner** linh hoạt hơn, chúng ta có thể sử dụng **interfaces** (giao diện) trong Java. Bằng cách định nghĩa một giao diện chung cho các trò chơi, chúng ta có thể làm cho **GameRunner** có thể chạy bất kỳ trò chơi nào mà không cần thay đổi mã nguồn khi thay đổi loại trò chơi.
+
+Ví dụ, chúng ta sẽ tạo một giao diện có tên là `GamingConsole`, và cả `MarioGame` và `SuperContraGame` sẽ thực thi (implement) giao diện này.
+
+
+## 3. Kết Luận
+
+- **Tight Coupling**: Là khi các lớp phụ thuộc mạnh vào nhau, gây khó khăn khi thay đổi và mở rộng.
+- **Loose Coupling**: Giúp tăng tính linh hoạt, dễ dàng bảo trì và mở rộng hệ thống bằng cách giảm sự phụ thuộc giữa các thành phần.
+- **Interfaces**: Là công cụ mạnh mẽ trong Java giúp đạt được loose coupling, cho phép các lớp tương tác thông qua giao diện chung thay vì phụ thuộc trực tiếp vào nhau.
