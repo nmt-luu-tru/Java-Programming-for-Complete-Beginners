@@ -1,6 +1,3 @@
-Dưới đây là phiên bản đầy đủ cho phần hướng dẫn về **Request Parameters** với chú thích đầy đủ cho các đoạn mã:
-
----
 
 ### Request Parameters trong Spring MVC
 
