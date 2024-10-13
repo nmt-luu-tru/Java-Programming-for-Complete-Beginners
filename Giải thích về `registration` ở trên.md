@@ -1,3 +1,21 @@
+```java
+@Slf4j
+public class WebAppInitializer implements WebApplicationInitializer {
+    @Override
+    public void onStartup(ServletContext servletContext) throws ServletException {
+        // Tạo Spring ApplicationContext
+        AnnotationConfigWebApplicationContext context = new AnnotationConfigWebApplicationContext();
+        context.register(WebConfig.class);
+
+        // Tạo và đăng ký DispatcherServlet
+        DispatcherServlet dispatcherServlet = new DispatcherServlet(context);
+        ServletRegistration.Dynamic registration = servletContext.addServlet("dispatcher", dispatcherServlet);
+        registration.setLoadOnStartup(1);
+        registration.addMapping("/");
+    }
+}
+```
+
 Dòng mã này nằm trong lớp **`WebAppInitializer`**, và nhiệm vụ của nó là đăng ký **Dispatcher Servlet** với **`ServletContext`** khi ứng dụng web được khởi động. Hãy phân tích chi tiết từng dòng để hiểu rõ hơn:
 
 ### 1. **`ServletRegistration.Dynamic registration = servletContext.addServlet("dispatcher", dispatcherServlet);`**
