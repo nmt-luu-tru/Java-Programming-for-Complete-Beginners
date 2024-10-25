@@ -41,6 +41,4 @@ Các dự án này giúp Spring Framework thích ứng và phát triển theo th
 
 ### Kết luận
 
-Bạn đã hoàn thành một cột mốc quan trọng, nắm vững các kiến thức cơ bản về Spring Framework và có cái nhìn tổng quan về hệ sinh thái Spring. Trong các phần tiếp theo, chúng ta sẽ xây dựng các ứng dụng thực tế để áp dụng những gì bạn đã học. Tôi rất vui mừng được tiếp tục hướng dẫn bạn trong hành trình này!
-
-Hẹn gặp lại bạn trong phần tiếp theo.
+Bạn đã hoàn thành một cột mốc quan trọng, nắm vững các kiến thức cơ bản về Spring Framework và có cái nhìn tổng quan về hệ sinh thái Spring.
