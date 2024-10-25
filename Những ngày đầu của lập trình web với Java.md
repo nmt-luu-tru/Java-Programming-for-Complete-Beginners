@@ -41,4 +41,4 @@ Vì những lý do trên, các framework như **Spring MVC**, **Struts**, và **
 - Tách biệt rõ ràng các phần khác nhau của ứng dụng (logic nghiệp vụ, giao diện, và tương tác cơ sở dữ liệu) để dễ bảo trì và phát triển hơn.
 
 ### Tổng kết:
-**Đúng**, trong những ngày đầu của lập trình web với Java, chỉ cần **JSP**, **Servlet**, cùng với **HTML**, **CSS**, và **cơ sở dữ liệu** là đủ để xây dựng một ứng dụng web. Tuy nhiên, với sự phức tạp ngày càng tăng của ứng dụng, các framework như **Spring MVC** đã ra đời để tối ưu hóa quy trình phát triển và giúp việc quản lý ứng dụng lớn trở nên dễ dàng hơn.
+Trong những ngày đầu của lập trình web với Java, chỉ cần **JSP**, **Servlet**, cùng với **HTML**, **CSS**, và **cơ sở dữ liệu** là đủ để xây dựng một ứng dụng web. Tuy nhiên, với sự phức tạp ngày càng tăng của ứng dụng, các framework như **Spring MVC** đã ra đời để tối ưu hóa quy trình phát triển và giúp việc quản lý ứng dụng lớn trở nên dễ dàng hơn.
