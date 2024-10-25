@@ -1,4 +1,3 @@
-Giảng viên: Chúc mừng bạn đã đạt được một cột mốc rất quan trọng trong khóa học này.
 
 Những gì chúng ta đã học cho đến giờ được gọi là **Spring Core**. Tất cả các tính năng mà chúng ta đã tìm hiểu như **IOC container**, **Dependency Injection**, **Autowiring**, đều là những khối xây dựng nền tảng quan trọng giúp bạn xây dựng các ứng dụng web tuyệt vời, tạo ra REST API, thực hiện xác thực và phân quyền, truy cập cơ sở dữ liệu, tích hợp với các hệ thống khác, hoặc viết các bài kiểm thử đơn vị chất lượng.
 
