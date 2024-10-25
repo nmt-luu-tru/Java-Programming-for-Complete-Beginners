@@ -1,7 +1,7 @@
 ### Khi Nào `WebApplicationInitializer` Được Khởi Chạy?
 
 - **Khởi Động Khi Ứng Dụng Bắt Đầu**:
-  - `WebApplicationInitializer` được khởi động tự động khi ứng dụng web của bạn khởi động trên một servlet container như Tomcat hoặc Jetty. Khi servlet container khởi động, nó sẽ quét các class trong ứng dụng để tìm các implementation của interface `WebApplicationInitializer`.
+  - `WebApplicationInitializer` **được khởi động tự động** khi ứng dụng web của bạn khởi động trên một servlet container như Tomcat hoặc Jetty. Khi servlet container khởi động, nó sẽ quét các class trong ứng dụng để tìm các implementation của interface `WebApplicationInitializer`.
 
 - **Không Cần Tệp `web.xml`**:
   - Với việc sử dụng `WebApplicationInitializer`, bạn không cần phải có tệp `web.xml` để cấu hình servlet hoặc context. Thay vào đó, tất cả các cấu hình đều nằm trong mã Java, làm cho việc quản lý và cấu hình trở nên linh hoạt và dễ dàng hơn.
