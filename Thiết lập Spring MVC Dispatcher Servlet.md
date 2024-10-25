@@ -72,6 +72,7 @@ public class WebAppInitializer implements WebApplicationInitializer {
     }
 }
 ```
+[Vai Trò của WebApplicationInitializer](https://github.com/nmt-luu-tru/Java-Programming-for-Complete-Beginners/blob/main/Vai%20Tr%C3%B2%20c%E1%BB%A7a%20WebApplicationInitializer.md)  
 [Giải thích đoạn mã về **registration** ở trên](https://github.com/nmt-luu-tru/Java-Programming-for-Complete-Beginners/blob/main/Gi%E1%BA%A3i%20th%C3%ADch%20v%E1%BB%81%20%60registration%60%20%E1%BB%9F%20tr%C3%AAn.md)  
 [Ví dụ thêm về addMapping](https://github.com/nmt-luu-tru/Java-Programming-for-Complete-Beginners/blob/main/V%C3%AD%20d%E1%BB%A5%20th%C3%AAm%20v%E1%BB%81%20addMapping.md)
 
