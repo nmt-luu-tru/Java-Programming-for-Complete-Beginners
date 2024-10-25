@@ -87,53 +87,6 @@ public class GameRunner {
 
 Ở đây, **Spring** sử dụng **reflection** để tiêm trực tiếp đối tượng **GamingConsole** vào biến **game**. Mặc dù cách này dễ dàng nhưng hạn chế là khó kiểm thử vì không dễ mô phỏng các phụ thuộc.
 
-### Các Bước Thực Hiện Trong Ví Dụ
-
-#### Bước 1: Tái cấu trúc dự án
-
-Đầu tiên, chúng ta sẽ tái cấu trúc mã nguồn để tạo một môi trường thuận tiện cho việc thử nghiệm các loại DI.
-
-1. **Di chuyển GamingAppLauncherApplication vào package `game`**:
-    - Di chuyển **GamingAppLauncherApplication** vào **com.in28minutes.learnspringframework.game**.
-
-2. **Tạo một ứng dụng khởi chạy mới**:
-    - Sao chép **GamingAppLauncherApplication** và tạo một lớp mới tên là **DependencyInjectionLauncherApplication** để thử nghiệm các loại DI.
-
-3. **Tạo package mới để tổ chức ví dụ**:
-    - Tạo package mới **com.in28minutes.learnspringframework.examples.a1** và di chuyển **DependencyInjectionLauncherApplication** vào đó.
-
-4. **Cấu hình ComponentScan**:
-    - Cập nhật **@ComponentScan** để chỉ định quét các component trong package mới.
-
-#### Bước 2: Khởi động Spring Context
-
-Tạo một phương thức để liệt kê tất cả các bean trong **Spring Context**:
-
-```java
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import java.util.Arrays;
-
-public class DependencyInjectionLauncherApplication {
-
-    public static void main(String[] args) {
-        try (var context = new AnnotationConfigApplicationContext(DependencyInjectionLauncherApplication.class)) {
-            Arrays.stream(context.getBeanDefinitionNames()).forEach(System.out::println);
-        }
-    }
-}
-```
-
-Khi chạy ứng dụng, bạn sẽ thấy danh sách các bean được Spring tạo ra.
-
-#### Bước 3: Thử Nghiệm Các Loại Dependency Injection
-
-Bây giờ bạn đã sẵn sàng để thử nghiệm từng loại **dependency injection**:
-
-1. **Constructor-based Injection**: Tiêm phụ thuộc thông qua constructor.
-2. **Setter-based Injection**: Tiêm phụ thuộc thông qua setter method.
-3. **Field-based Injection**: Tiêm trực tiếp vào biến thành viên.
-
-Mỗi loại đều có ưu và nhược điểm riêng, và bạn có thể tùy chọn loại tiêm phù hợp nhất với yêu cầu của ứng dụng.
 
 ### Tổng Kết
 
